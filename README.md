@@ -7,6 +7,7 @@
 Client:
 
 ```js
+//- index.js
 import React from 'react';
 import ReactDom from 'react-dom';
 import {Router} from 'react-routes';
@@ -22,10 +23,34 @@ let routes = [
 
 ReactDom.render(<Router routes={routes}/>, document.getElementById('app'));
 ```
+```sass
+//- index.styl
+*
+  position: relative
+
+.router-enter
+  opacity: 0.01
+.router-enter.router-enter-active
+  opacity: 1
+  transition: opacity 1.5s ease-in
+
+.router-leave
+  opacity: 1
+.router-leave.router-leave-active
+  opacity: 0.01
+  transition: opacity 1.5s ease-in
+
+.router-appear
+  opacity: 0.01
+  transition: opacity 1.5s ease-in
+.router-appear.router-appear-active
+  opacity: 1
+```
 
 Server:
 
 ```js
+//- index.js
 import React from 'react';
 import ReactDomServer from 'react-dom/server';
 import {Router} from 'react-routes';
@@ -39,6 +64,7 @@ function render(req, res, next) {
 }
 ```
 ```jade
+//- index.jade
 doctype html
 html(lang="en")
   head

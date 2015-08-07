@@ -40,7 +40,6 @@
     "object-assign": "^3.0.0",
     "path-to-regexp": "^1.2.0",
     "react": "^0.14.0-beta3",
-    "react-addons-css-transition-group": "^0.14.0-beta3",
     "url": "^0.10.3"
   }
 }

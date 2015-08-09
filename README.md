@@ -21,7 +21,7 @@ let routes = [
   {path: '/', handler: Root},
 ];
 
-ReactDom.render(<Router routes={routes}/>, document.getElementById('app'));
+ReactDom.render(<Router routes={routes} transitionName='router'/>, document.getElementById('app'));
 ```
 ```sass
 //- index.styl
@@ -59,7 +59,7 @@ import routes from '../../app/routes';
 export default {render};
 
 function render(req, res, next) {
-  let html = ReactDomServer.renderToString(<Router routes={routes} url={req.url} />);
+  let html = ReactDomServer.renderToString(<Router routes={routes} url={req.url} transitionName='router'/>);
   res.render('index', {html});
 }
 ```

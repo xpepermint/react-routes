@@ -39,12 +39,6 @@ ReactDom.render(<Router routes={routes} transitionName='router'/>, document.getE
 .router-leave.router-leave-active
   opacity: 0.01
   transition: opacity 1.5s ease-in
-
-.router-appear
-  opacity: 0.01
-  transition: opacity 1.5s ease-in
-.router-appear.router-appear-active
-  opacity: 1
 ```
 
 Server:

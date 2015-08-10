@@ -1,6 +1,6 @@
 {
   "name": "react-routes",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Lightweight isomorphic HTML5 router for ReactJS.",
   "main": "index.js",
   "scripts": {
@@ -36,7 +36,7 @@
   },
   "homepage": "https://github.com/xpepermint/react-routes#readme",
   "dependencies": {
-    "history-events": "^1.0.2",
+    "history-events": "^1.0.4",
     "object-assign": "^3.0.0",
     "path-to-regexp": "^1.2.0",
     "react": "^0.14.0-beta3",

@@ -1,6 +1,6 @@
 {
   "name": "react-routes",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "Lightweight isomorphic HTML5 router for ReactJS.",
   "main": "index.js",
   "scripts": {
